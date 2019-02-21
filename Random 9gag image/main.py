@@ -17,10 +17,10 @@ def get_image():
 	try:
 		result = re.findall(r'(?<=\<link rel=\"image_src\" href=\").*.jpg', html)
 		print (result[0])
+	
 	except AttributeError:
 		print("Error Catched")
 		pass
 
 if __name__ == '__main__':
 	main(sys.argv)
-	
